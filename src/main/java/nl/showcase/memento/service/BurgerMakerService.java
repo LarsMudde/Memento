@@ -8,12 +8,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class BurgerMakerService {
 
-    private Caretaker caretaker = new Caretaker();
-    private Originator originator = new Originator();
+    private final Caretaker caretaker = new Caretaker();
+    private final Originator originator = new Originator();
 
     private Burger burger = Burger.forName("newBurger");
 
-    int savedBurgers = 0, currentBurger = 0;
+    int savedBurgers = 0;
+    int currentBurger = 0;
 
     public Burger setBurger(Burger updatedBurger) {
         // Set the value for the current memento
