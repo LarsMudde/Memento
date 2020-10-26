@@ -10,7 +10,7 @@ public class Originator {
         this.burger = newBurger;
     }
 
-    // Creates a new memento with the added ingredient
+    // Creates a new memento with the new object in it
     public Memento storeInMemento(){
         return new Memento(burger);
     }
