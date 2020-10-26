@@ -16,6 +16,12 @@ public class BurgerMakerService {
     int savedBurgers = 0;
     int currentBurger = 0;
 
+    BurgerMakerService() {
+        originator.set(burger);
+        caretaker.addMemento(originator.storeInMemento());
+        savedBurgers++;
+    }
+
     public Burger setBurger(Burger updatedBurger) {
         // Set the value for the current memento
         originator.set(updatedBurger);
