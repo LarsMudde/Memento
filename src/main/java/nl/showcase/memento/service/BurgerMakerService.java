@@ -56,7 +56,6 @@ public class BurgerMakerService {
 
             // Get the next burger
             burger = originator.restoreFromMemento(caretaker.getMemento(currentBurger));
-            burger = originator.restoreFromMemento(caretaker.getMemento(currentBurger));
         }
         return burger;
     }
