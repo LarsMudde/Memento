@@ -3,7 +3,6 @@ package nl.showcase.memento.domain;
 import org.springframework.util.Assert;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Burger {
